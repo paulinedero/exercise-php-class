@@ -1,5 +1,5 @@
 <?php
-class Vehicle
+abstract class Vehicle
 {
     // properties
     protected string $color;
@@ -35,6 +35,9 @@ class Vehicle
         $sentence .= "I'm stopped !";
         return $sentence;
     }
+
+    // abstract methods
+    abstract public function changeWheel();
 
     // getters and setters
     public function getCurrentSpeed(): int

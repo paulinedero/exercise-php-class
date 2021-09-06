@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Car.php';
-class Truck extends Car 
+abstract class Truck extends Car 
 {
     // properties
     public int $loadCapacity; //m3
@@ -14,6 +14,9 @@ class Truck extends Car
         $this->loadCapacity = $loadCapacity;
         $this->currentLoad = $currentLoad;
     }
+
+    //abstract methods
+    abstract public function changeWheel();
 
     // methods
     public function checkCurrentLoad(): string {

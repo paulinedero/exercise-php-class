@@ -1,22 +1,29 @@
 <?php
 require_once 'Vehicle.php';
-class Car extends Vehicle
+abstract class Car extends Vehicle
 {
+    // constant
     public const ALLOWED_ENERGIES = [
         'fuel',
         'electric',
     ];
 
+    //properties
     protected string $energy;
 
     protected int $energyLevel;
 
+    //constructor
     public function __construct(string $color, int $nbSeats, string $energy)
     {
         parent::__construct($color, $nbSeats);
         $this->energy = $energy;
     }
 
+    //abstract methods
+    abstract public function changeWheel();
+
+    //getters and setters
     public function getEnergy(): string
     {
         return $this->energy;
