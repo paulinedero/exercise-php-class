@@ -1,14 +1,15 @@
 <?php
+var_dump("texdry");
 class Bicycle
 {
     //properties
-    private /*string*/ $color;
-    private /*int*/ $currentSpeed;
-    private /*int*/ $nbSeats = 1;
-    private /*int*/ $nbWheels = 2;
+    private String $color;
+    private int $currentSpeed;
+    private int $nbSeats = 1;
+    private int $nbWheels = 2;
 
     //constructor
-    public function __construct(string $color, int $currentSpeed, int $nbSeats, int $nbWheels)
+    public function __construct(String $color, int $currentSpeed, int $nbSeats, int $nbWheels)
     {
         $this->color = $color;
         $this->currentSpeed = $currentSpeed;
@@ -17,13 +18,13 @@ class Bicycle
     }
 
     //methods
-    public function forward(): string
+    public function forward(): String
     {
         $this->currentSpeed = 15;
         return "Go !";
     }
 
-    public function brake(): string
+    public function brake(): String
     {
         $sentence = "";
         while ($this->currentSpeed > 0) {
@@ -35,7 +36,7 @@ class Bicycle
     }
 
     //getters
-    public function getColor(): string
+    public function getColor(): String
     {
         return $this->color;
     }
@@ -56,7 +57,7 @@ class Bicycle
     }
 
     //setters
-    public function setColor(string $color): void
+    public function setColor(String $color): void
     {
         $this->color = $color;
     }
@@ -66,4 +67,5 @@ class Bicycle
         $this->currentSpeed = $currentSpeed;
     }
 }
+
 ?>

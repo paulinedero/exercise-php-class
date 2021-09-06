@@ -4,13 +4,13 @@ class SimpsonsCar
     //properties
     public /*int*/ $numberWheels;
     public /*int*/ $currentSpeed;
-    private /*string*/ $color;
+    private /*String*/ $color;
     private /*int*/ $numberSeats;
-    private /*string*/ $energy;
+    private /*String*/ $energy;
     public /*int*/ $energyLevel;
 
     //constructor
-    public function __construct(string $color, int $numberSeats, string $energy)
+    public function __construct(String $color, int $numberSeats, String $energy)
     {
         $this->color = $color;
         $this->numberSeats = $numberSeats;
@@ -18,19 +18,19 @@ class SimpsonsCar
     }
 
     //methods
-    public function start(): string
+    public function start(): String
     {
         $this->currentSpeed = 0;
         return "Start engine";
     }
 
-    public function forward(): string
+    public function forward(): String
     {
         $this->currentSpeed = 15;
         return "Go !";
     }
 
-    public function brake(): string
+    public function brake(): String
     {
         $sentence = "";
         while ($this->currentSpeed > 0) {
@@ -52,7 +52,7 @@ class SimpsonsCar
         return $this->currentSpeed;
     }
 
-    public function getColor(): string
+    public function getColor(): String
     {
         return $this->color;
     }
@@ -62,7 +62,7 @@ class SimpsonsCar
         return $this->numberSeats;
     }
 
-    public function getEnergy(): string
+    public function getEnergy(): String
     {
         return $this->energy;
     }
@@ -73,7 +73,7 @@ class SimpsonsCar
     }
 
     //setters
-    public function setColor(string $color): void
+    public function setColor(String $color): void
     {
         $this->color = $color;
     }

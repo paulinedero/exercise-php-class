@@ -1,6 +1,6 @@
 <?php
 require_once 'Bicycle.php';
-require_once 'SimpsonsCar.php';
+//require_once 'SimpsonsCar.php';
 
 $bike = new Bicycle('blue', 1, 2, 3);
 var_dump($bike);
