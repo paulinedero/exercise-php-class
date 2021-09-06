@@ -1,6 +1,6 @@
 <?php
 
-require 'Vehicle.php';
+require_once 'Vehicle.php';
 class Bicycle extends Vehicle
 {
     public function __construct(string $color, int $nbSeats, string $energy)

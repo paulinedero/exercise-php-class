@@ -17,16 +17,16 @@ echo '<br> Vitesse du vélo : ' . $bike->getCurrentSpeed() . ' km/h' . '<br>';
 echo $bike->brake();
 
 
-$simpsonsCar = new SimpsonsCar('red', 5, 'gasoline');
-var_dump($simpsonsCar);
+$car = new Car ('red', 5, 'gasoline');
+var_dump($car);
 
-$simpsonsCar->setColor('blue');
-$simpsonsCar->setCurrentSpeed(30);
-var_dump($simpsonsCar);
+$car->setColor('blue');
+$car->setCurrentSpeed(30);
+var_dump($car);
 
-echo $simpsonsCar->forward();
-echo '<br> Vitesse de la voiture : ' . $simpsonsCar->getCurrentSpeed() . ' km/h' . '<br>';
-echo $simpsonsCar->brake();
-echo '<br> Vitesse de la voiture : ' . $simpsonsCar->getCurrentSpeed() . ' km/h' . '<br>';
-echo $simpsonsCar->brake();
+echo $car->forward();
+echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo $car->brake();
+echo '<br> Vitesse de la voiture : ' . $car->getCurrentSpeed() . ' km/h' . '<br>';
+echo $car->brake();
 ?>
