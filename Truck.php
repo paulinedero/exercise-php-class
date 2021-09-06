@@ -17,9 +17,12 @@ class Truck extends Car
     }
 
     // methods
-    public function checkCurrentLoad() {
-
-
+    public function checkCurrentLoad(): string {
+        if ($this->currentLoad < 100) {
+            return 'in filling';
+        } else {
+            return 'full';
+        }
     }
 
     //getters and setters
