@@ -1,6 +1,6 @@
 <?php
 require_once 'Vehicle.php';
-abstract class Car extends Vehicle
+class Car extends Vehicle
 {
     // constant
     public const ALLOWED_ENERGIES = [
@@ -21,7 +21,9 @@ abstract class Car extends Vehicle
     }
 
     //abstract methods
-    abstract public function changeWheel();
+    public function changeWheel() {
+        echo 'RTFM' . "\n";
+    }
 
     //getters and setters
     public function getEnergy(): string

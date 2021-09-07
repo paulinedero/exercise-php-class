@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Car.php';
-abstract class Truck extends Car 
+class Truck extends Car 
 {
     // properties
     public int $loadCapacity; //m3
@@ -16,7 +16,9 @@ abstract class Truck extends Car
     }
 
     //abstract methods
-    abstract public function changeWheel();
+    public function changeWheel() {
+        echo 'RTFM' . "\n";
+    }
 
     // methods
     public function checkCurrentLoad(): string {

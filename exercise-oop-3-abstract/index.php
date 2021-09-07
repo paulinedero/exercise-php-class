@@ -6,30 +6,31 @@ require_once 'Vehicle.php';
 
 // POO - Basics | Part 3 : Abstraction
 
-// $bike = new Bicycle('blue', 1, 'electric');
-// echo $bike->forward();
-// var_dump($bike);
+$bike = new Bicycle('blue', 1, 'electric');
+echo $bike->forward();
+var_dump($bike);
 
-// $car = new Car('blue', 1, 'gasoline');
-// echo $car->forward();
-// var_dump($car);
-// var_dump(Car::ALLOWED_ENERGIES);
+$car = new Car('blue', 1, 'gasoline');
+echo $car->forward();
+var_dump($car);
+var_dump(Car::ALLOWED_ENERGIES);
 
-// $truck = new Truck('red', 3, 'fuel', 13, 50);
-// var_dump($truck);
-// var_dump(Truck::ALLOWED_ENERGIES);
-// echo $truck->forward();
-// echo '<br>';
-// echo $truck->brake();
-// echo '<br>';
-// echo 'Load Capacity : ' . $truck->getLoadCapacity() . ' m3';
-// echo '<br>';
-// echo 'Current Load : ' . $truck->getCurrentLoad() . ' %';
-// $truck->setColor('blue');
-// var_dump($truck);
+$truck = new Truck('red', 3, 'fuel', 13, 50);
+var_dump($truck);
+var_dump(Truck::ALLOWED_ENERGIES);
+echo $truck->forward();
+echo '<br>';
+echo $truck->brake();
+echo '<br>';
+echo 'Load Capacity : ' . $truck->getLoadCapacity() . ' m3';
+echo '<br>';
+echo 'Current Load : ' . $truck->getCurrentLoad() . ' %';
+$truck->setColor('blue');
+var_dump($truck);
+echo $truck->changeWheel();
 
-$vehicle = new Vehicle('purple', 4);
-var_dump($vehicle);
+// $vehicle = new Vehicle('purple', 4);
+// var_dump($vehicle);
 
 
 /*

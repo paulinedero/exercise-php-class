@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Vehicle.php';
-abstract class Bicycle extends Vehicle
+class Bicycle extends Vehicle
 {
     public function __construct(string $color, int $nbSeats, string $energy)
     {
@@ -10,6 +10,8 @@ abstract class Bicycle extends Vehicle
     }
 
     // abstract methods
-    abstract public function changeWheel();
+    public function changeWheel() {
+        echo 'RTFM' . "\n";
+    }
 }
 ?>
